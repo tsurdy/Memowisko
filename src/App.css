@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  min-height: 70xp;
+  width: 100%;
+  background-color: #eee;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__item .nav__link {
+  color: #777;
+  text-decoration: none;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+
+.nav__item:hover .nav__link {
+  color: black;
+}
+
+.list {
+  max-width: 1200px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.list__item {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 30px 50px;
+  margin-top: 40px;
+  box-shadow: 0px 0px 10px 2px #aaa;
+  position: relative;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+img {
+  max-width: 400px;
+}
+
+.button__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ddd;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button--like {
+  background-color: rgb(42, 70, 195);
+}
+.button--like:hover {
+  background-color: rgb(1, 46, 245);
+}
+.button--like:active {
+  background-color: rgb(0, 26, 144);
+}
+
+.button--dislike {
+  background-color: rgb(180, 31, 31);
+}
+.button--dislike:hover {
+  background-color: rgb(175, 0, 0);
+}
+.button--dislike:active {
+  background-color: rgb(113, 4, 4);
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.input {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 6px 10px;
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #f0e6e6;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d9d1d1;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #e8cdcd;
+}
+
+.star {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.svg {
+  fill: black;
+}
+.svg:hover {
+  fill: #d9e187;
+}
+
+.svg--favorite {
+  fill: #ccdb22;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 280px;
+  }
+
+  .nav__list {
+    gap: 35px;
+  }
+}
